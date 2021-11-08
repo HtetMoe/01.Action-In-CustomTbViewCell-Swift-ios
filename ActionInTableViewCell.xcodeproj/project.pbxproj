@@ -16,6 +16,8 @@
 		0D211A3927391153006AC93A /* ActionInTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D211A3827391153006AC93A /* ActionInTableViewCellTests.swift */; };
 		0D211A4327391153006AC93A /* ActionInTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D211A4227391153006AC93A /* ActionInTableViewCellUITests.swift */; };
 		0D211A4527391153006AC93A /* ActionInTableViewCellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D211A4427391153006AC93A /* ActionInTableViewCellUITestsLaunchTests.swift */; };
+		0D211A5627391B58006AC93A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D211A5427391B58006AC93A /* TableViewCell.swift */; };
+		0D211A5727391B58006AC93A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D211A5527391B58006AC93A /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0D211A3E27391153006AC93A /* ActionInTableViewCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionInTableViewCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D211A4227391153006AC93A /* ActionInTableViewCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionInTableViewCellUITests.swift; sourceTree = "<group>"; };
 		0D211A4427391153006AC93A /* ActionInTableViewCellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionInTableViewCellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D211A5427391B58006AC93A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0D211A5527391B58006AC93A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,9 @@
 			children = (
 				0D211A2127391151006AC93A /* AppDelegate.swift */,
 				0D211A2327391151006AC93A /* SceneDelegate.swift */,
-				0D211A2527391151006AC93A /* ViewController.swift */,
-				0D211A2727391151006AC93A /* Main.storyboard */,
-				0D211A2A27391152006AC93A /* Assets.xcassets */,
-				0D211A2C27391152006AC93A /* LaunchScreen.storyboard */,
+				0D211A52273915D5006AC93A /* Views */,
+				0D211A51273915C4006AC93A /* Controllers */,
+				0D211A53273915E5006AC93A /* SupportingFiles */,
 				0D211A2F27391152006AC93A /* Info.plist */,
 			);
 			path = ActionInTableViewCell;
@@ -125,6 +128,41 @@
 				0D211A4427391153006AC93A /* ActionInTableViewCellUITestsLaunchTests.swift */,
 			);
 			path = ActionInTableViewCellUITests;
+			sourceTree = "<group>";
+		};
+		0D211A51273915C4006AC93A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D211A2527391151006AC93A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D211A52273915D5006AC93A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D211A2727391151006AC93A /* Main.storyboard */,
+				0D211A5827391B5E006AC93A /* cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D211A53273915E5006AC93A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0D211A2A27391152006AC93A /* Assets.xcassets */,
+				0D211A2C27391152006AC93A /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0D211A5827391B5E006AC93A /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				0D211A5427391B58006AC93A /* TableViewCell.swift */,
+				0D211A5527391B58006AC93A /* TableViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D211A2E27391152006AC93A /* LaunchScreen.storyboard in Resources */,
+				0D211A5727391B58006AC93A /* TableViewCell.xib in Resources */,
 				0D211A2B27391152006AC93A /* Assets.xcassets in Resources */,
 				0D211A2927391151006AC93A /* Main.storyboard in Resources */,
 			);
@@ -259,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D211A2627391151006AC93A /* ViewController.swift in Sources */,
+				0D211A5627391B58006AC93A /* TableViewCell.swift in Sources */,
 				0D211A2227391151006AC93A /* AppDelegate.swift in Sources */,
 				0D211A2427391151006AC93A /* SceneDelegate.swift in Sources */,
 			);
