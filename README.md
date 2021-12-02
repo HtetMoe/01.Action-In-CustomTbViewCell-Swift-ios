@@ -1,1 +1,2 @@
 - used protocol for pass data from cell to VC
+- can preview runned app UI in issue tab
